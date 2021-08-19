@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чек-Лист</title>
+    <link rel="stylesheet" href="style\style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header-logo">
+                        <a href="#">
+                            <div class="header-logo__img">
+                                <img src="img\Logo2.png" alt="Logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-phone">
+                        <a href="#">
+                            <div class="header-phone__wrapper">
+                                <div class="header-phone__text">
+                                    <p><span class="header-phone__text1">Маркетолог сейчас Online</span> <br>
+                                        <span class="header-phone__text2">+375 44 711 24 64</span>
+                                    </p>
+                                </div>
+                                <div class="header-phone__img">
+                                    <img src="img\tg.png" alt="img">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-address">
+                        <p class="header-address__text">г. Минск, ул. Широкая, д. 3, офис 148,
+                            Работаем каждый день с 9 до 22</p>
+                    </div>
+                    <div class="burger__wrapper">
+                        <div id="burger" class="burger__btn">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div id="header-btn__wrrapper" class="header-btn">
+                        <div class="header-btn__wrapper">
+                            <a id="header-btn" class="btn-big btn" href="#">
+                                <svg width="22" height="25" viewBox="0 0 22 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.16675 19.5221H16.8334V17.1055H5.16675V19.5221Z" fill="white" />
+                                    <path d="M16.8334 14.6891H5.16675V12.2725H16.8334V14.6891Z" fill="white" />
+                                    <path d="M5.16675 9.85563H9.83342V7.43896H5.16675V9.85563Z" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4 0.188965C3.07174 0.188965 2.1815 0.570884 1.52513 1.2507C0.868749 1.93052 0.5 2.85256 0.5 3.81397V20.7306C0.5 21.692 0.868749 22.6141 1.52513 23.2939C2.1815 23.9737 3.07174 24.3556 4 24.3556H18C18.9283 24.3556 19.8185 23.9737 20.4749 23.2939C21.1313 22.6141 21.5 21.692 21.5 20.7306V8.6473C21.5 6.40401 20.6396 4.2526 19.108 2.66635C17.5765 1.08011 15.4993 0.188965 13.3333 0.188965H4ZM4 2.60563H12.1667V8.6473H19.1667V20.7306C19.1667 21.0511 19.0438 21.3584 18.825 21.5851C18.6062 21.8117 18.3094 21.939 18 21.939H4C3.69058 21.939 3.39383 21.8117 3.17504 21.5851C2.95625 21.3584 2.83333 21.0511 2.83333 20.7306V3.81397C2.83333 3.4935 2.95625 3.18615 3.17504 2.95954C3.39383 2.73294 3.69058 2.60563 4 2.60563ZM14.5 2.72646C15.417 2.92103 16.2754 3.34089 17.0031 3.95069C17.7307 4.5605 18.3063 5.34241 18.6813 6.23063H14.5V2.72646Z"
+                                        fill="white" />
+                                </svg>
+                                <p>Пакет документов</p>
+                            </a>
+                        </div>
+                        <div class="header-btn__bottom">
+                            <a class="btn-big _btn-spoiler _bottom-btn-02" href="#">
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.4167 1.80835H5.58333C3.1901 1.80835 1.25 3.74845 1.25 6.14168V16.975C1.25 19.3683 3.1901 21.3083 5.58333 21.3083H16.4167C18.8099 21.3083 20.75 19.3683 20.75 16.975V6.14168C20.75 3.74845 18.8099 1.80835 16.4167 1.80835Z"
+                                        stroke="#E0E0E0" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.75 11.5583L10.1875 13.7249L14.25 9.3916" stroke="#E0E0E0"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Договор</p>
+                            </a><a class="btn-big _btn-spoiler" href="#">
+                                <svg width="22" height="28" viewBox="0 0 22 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9626 11.543C11.9626 11.2778 12.0664 11.0234 12.251 10.8359C12.4356 10.6483 12.6859 10.543 12.947 10.543H17.5408C17.8018 10.543 18.0522 10.6483 18.2368 10.8359C18.4214 11.0234 18.5251 11.2778 18.5251 11.543C18.5251 11.8082 18.4214 12.0625 18.2368 12.2501C18.0522 12.4376 17.8018 12.543 17.5408 12.543H12.947C12.6859 12.543 12.4356 12.4376 12.251 12.2501C12.0664 12.0625 11.9626 11.8082 11.9626 11.543ZM12.947 17.8763C12.6859 17.8763 12.4356 17.9817 12.251 18.1692C12.0664 18.3567 11.9626 18.6111 11.9626 18.8763C11.9626 19.1415 12.0664 19.3959 12.251 19.5834C12.4356 19.7709 12.6859 19.8763 12.947 19.8763H17.5408C17.8018 19.8763 18.0522 19.7709 18.2368 19.5834C18.4214 19.3959 18.5251 19.1415 18.5251 18.8763C18.5251 18.6111 18.4214 18.3567 18.2368 18.1692C18.0522 17.9817 17.8018 17.8763 17.5408 17.8763H12.947ZM9.70515 10.9163C9.80186 10.8248 9.87943 10.7144 9.93323 10.5917C9.98704 10.469 10.016 10.3366 10.0183 10.2023C10.0206 10.0681 9.99632 9.93469 9.94681 9.81017C9.8973 9.68565 9.82361 9.57254 9.73013 9.47758C9.63666 9.38263 9.52532 9.30777 9.40274 9.25747C9.28017 9.20718 9.14888 9.18248 9.01671 9.18485C8.88454 9.18722 8.75419 9.21661 8.63344 9.27126C8.51269 9.32592 8.40402 9.40472 8.3139 9.50297L6.38452 11.463L5.76765 10.8363C5.58104 10.6597 5.33423 10.5635 5.07921 10.5681C4.82419 10.5726 4.58087 10.6776 4.40052 10.8608C4.22016 11.044 4.11685 11.2912 4.11235 11.5503C4.10785 11.8093 4.20252 12.0601 4.3764 12.2496L5.6889 13.583C5.87347 13.7702 6.12366 13.8754 6.38452 13.8754C6.64538 13.8754 6.89558 13.7702 7.08015 13.583L9.70515 10.9163ZM9.70515 16.8363C9.88949 17.0238 9.99303 17.278 9.99303 17.543C9.99303 17.808 9.88949 18.0621 9.70515 18.2496L7.08015 20.9163C6.89558 21.1036 6.64538 21.2088 6.38452 21.2088C6.12366 21.2088 5.87347 21.1036 5.6889 20.9163L4.3764 19.583C4.27968 19.4914 4.20211 19.381 4.14831 19.2584C4.09451 19.1357 4.06558 19.0033 4.06325 18.869C4.06091 18.7347 4.08523 18.6014 4.13474 18.4768C4.18424 18.3523 4.25793 18.2392 4.35141 18.1443C4.44488 18.0493 4.55623 17.9744 4.6788 17.9241C4.80137 17.8738 4.93266 17.8491 5.06483 17.8515C5.197 17.8539 5.32735 17.8833 5.4481 17.9379C5.56885 17.9926 5.67753 18.0714 5.76765 18.1696L6.38452 18.7963L8.3139 16.8363C8.49847 16.649 8.74866 16.5438 9.00952 16.5438C9.27038 16.5438 9.52058 16.649 9.70515 16.8363ZM16.5485 3.32164C16.4935 2.56633 16.1593 1.86012 15.613 1.34473C15.0668 0.82934 14.3488 0.542924 13.6033 0.542969H9.00952C8.28313 0.542991 7.58224 0.814978 7.04083 1.30693C6.49942 1.79888 6.15548 2.47629 6.07477 3.20964H3.75952C2.9763 3.20964 2.22517 3.52571 1.67135 4.08832C1.11753 4.65092 0.806396 5.41399 0.806396 6.20964V24.2096C0.806396 25.0053 1.11753 25.7683 1.67135 26.331C2.22517 26.8936 2.9763 27.2096 3.75952 27.2096H18.8533C19.2411 27.2096 19.6251 27.132 19.9834 26.9813C20.3417 26.8305 20.6672 26.6095 20.9414 26.331C21.2157 26.0524 21.4332 25.7217 21.5816 25.3577C21.73 24.9937 21.8064 24.6036 21.8064 24.2096V6.20964C21.8064 5.81567 21.73 5.42556 21.5816 5.06159C21.4332 4.69761 21.2157 4.36689 20.9414 4.08832C20.6672 3.80974 20.3417 3.58876 19.9834 3.438C19.6251 3.28723 19.2411 3.20964 18.8533 3.20964H16.538L16.5485 3.32164ZM16.5485 3.33764L16.5564 3.54297C16.5564 3.47364 16.5538 3.40564 16.5498 3.33764H16.5485ZM9.00952 6.54297H13.6033C14.627 6.54297 15.5287 6.01364 16.059 5.20964H18.8533C19.1143 5.20964 19.3647 5.31499 19.5493 5.50253C19.7339 5.69006 19.8376 5.94442 19.8376 6.20964V24.2096C19.8376 24.4749 19.7339 24.7292 19.5493 24.9167C19.3647 25.1043 19.1143 25.2096 18.8533 25.2096H3.75952C3.49845 25.2096 3.24807 25.1043 3.06346 24.9167C2.87886 24.7292 2.77515 24.4749 2.77515 24.2096V6.20964C2.77515 5.94442 2.87886 5.69006 3.06346 5.50253C3.24807 5.31499 3.49845 5.20964 3.75952 5.20964H6.55383C7.08408 6.01364 7.98577 6.54297 9.00952 6.54297ZM9.00952 2.54297H13.6033C13.8643 2.54297 14.1147 2.64833 14.2993 2.83586C14.4839 3.0234 14.5876 3.27775 14.5876 3.54297C14.5876 3.80819 14.4839 4.06254 14.2993 4.25008C14.1147 4.43761 13.8643 4.54297 13.6033 4.54297H9.00952C8.74845 4.54297 8.49807 4.43761 8.31346 4.25008C8.12886 4.06254 8.02515 3.80819 8.02515 3.54297C8.02515 3.27775 8.12886 3.0234 8.31346 2.83586C8.49807 2.64833 8.74845 2.54297 9.00952 2.54297Z"
+                                        fill="#E0E0E0" />
+                                </svg>
+                                <p>Тех.задание</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="top">
+                <div class="container">
+                    <div class="top__wrapper">
+                        <div id="burger-bg" class="top-menu-burger__wrapper">
+                            <div class="header-logo _burger-logo">
+                                <a href="#">
+                                    <div class="header-logo__img">
+                                        <img src="img\Logo2.png" alt="Logo">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="top-list__wrapper">
+                                <ul class="top__list">
+                                    <li class="top-list__item"><a class="top-list__link" href="#">Структура работы</a>
+                                    </li>
+                                    <li class="top-list__item"><a class="top-list__link" href="#">Отзывы</a></li>
+                                    <li class="top-list__item"><a class="top-list__link" href="#">Стоимость</a></li>
+                                    <li class="top-list__item"><a class="top-list__link" href="#">Условия</a></li>
+                                    <li class="top-list__item"><a class="top-list__link" href="#">Команда</a></li>
+                                    <li class="top-list__item"><a class="top-list__link" href="#">Отчеты</a></li>
+                                </ul>
+
+                            </div>
+
+
+                            <div class="header-address _burger-header-address">
+                                <p class="header-address__text">г. Минск, ул. Широкая, д. 3, офис 148,
+                                    Работаем каждый день с 9 до 22</p>
+                            </div>
+
+                            <div id="header-btn__wrrapper" class="header-btn _burger-header-btn">
+                                <div class="header-btn__wrapper">
+                                    <a id="header-btn" class="btn-big btn" href="#">
+                                        <svg width="22" height="25" viewBox="0 0 22 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.16675 19.5221H16.8334V17.1055H5.16675V19.5221Z" fill="white" />
+                                            <path d="M16.8334 14.6891H5.16675V12.2725H16.8334V14.6891Z" fill="white" />
+                                            <path d="M5.16675 9.85563H9.83342V7.43896H5.16675V9.85563Z" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4 0.188965C3.07174 0.188965 2.1815 0.570884 1.52513 1.2507C0.868749 1.93052 0.5 2.85256 0.5 3.81397V20.7306C0.5 21.692 0.868749 22.6141 1.52513 23.2939C2.1815 23.9737 3.07174 24.3556 4 24.3556H18C18.9283 24.3556 19.8185 23.9737 20.4749 23.2939C21.1313 22.6141 21.5 21.692 21.5 20.7306V8.6473C21.5 6.40401 20.6396 4.2526 19.108 2.66635C17.5765 1.08011 15.4993 0.188965 13.3333 0.188965H4ZM4 2.60563H12.1667V8.6473H19.1667V20.7306C19.1667 21.0511 19.0438 21.3584 18.825 21.5851C18.6062 21.8117 18.3094 21.939 18 21.939H4C3.69058 21.939 3.39383 21.8117 3.17504 21.5851C2.95625 21.3584 2.83333 21.0511 2.83333 20.7306V3.81397C2.83333 3.4935 2.95625 3.18615 3.17504 2.95954C3.39383 2.73294 3.69058 2.60563 4 2.60563ZM14.5 2.72646C15.417 2.92103 16.2754 3.34089 17.0031 3.95069C17.7307 4.5605 18.3063 5.34241 18.6813 6.23063H14.5V2.72646Z"
+                                                fill="white" />
+                                        </svg>
+                                        <p>Пакет документов</p>
+                                    </a>
+                                </div>
+                                <div class="header-btn__bottom">
+                                    <a class="btn-big _btn-spoiler _bottom-btn-02" href="#">
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.4167 1.80835H5.58333C3.1901 1.80835 1.25 3.74845 1.25 6.14168V16.975C1.25 19.3683 3.1901 21.3083 5.58333 21.3083H16.4167C18.8099 21.3083 20.75 19.3683 20.75 16.975V6.14168C20.75 3.74845 18.8099 1.80835 16.4167 1.80835Z"
+                                                stroke="#E0E0E0" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M7.75 11.5583L10.1875 13.7249L14.25 9.3916" stroke="#E0E0E0"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p>Договор</p>
+                                    </a><a class="btn-big _btn-spoiler" href="#">
+                                        <svg width="22" height="28" viewBox="0 0 22 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9626 11.543C11.9626 11.2778 12.0664 11.0234 12.251 10.8359C12.4356 10.6483 12.6859 10.543 12.947 10.543H17.5408C17.8018 10.543 18.0522 10.6483 18.2368 10.8359C18.4214 11.0234 18.5251 11.2778 18.5251 11.543C18.5251 11.8082 18.4214 12.0625 18.2368 12.2501C18.0522 12.4376 17.8018 12.543 17.5408 12.543H12.947C12.6859 12.543 12.4356 12.4376 12.251 12.2501C12.0664 12.0625 11.9626 11.8082 11.9626 11.543ZM12.947 17.8763C12.6859 17.8763 12.4356 17.9817 12.251 18.1692C12.0664 18.3567 11.9626 18.6111 11.9626 18.8763C11.9626 19.1415 12.0664 19.3959 12.251 19.5834C12.4356 19.7709 12.6859 19.8763 12.947 19.8763H17.5408C17.8018 19.8763 18.0522 19.7709 18.2368 19.5834C18.4214 19.3959 18.5251 19.1415 18.5251 18.8763C18.5251 18.6111 18.4214 18.3567 18.2368 18.1692C18.0522 17.9817 17.8018 17.8763 17.5408 17.8763H12.947ZM9.70515 10.9163C9.80186 10.8248 9.87943 10.7144 9.93323 10.5917C9.98704 10.469 10.016 10.3366 10.0183 10.2023C10.0206 10.0681 9.99632 9.93469 9.94681 9.81017C9.8973 9.68565 9.82361 9.57254 9.73013 9.47758C9.63666 9.38263 9.52532 9.30777 9.40274 9.25747C9.28017 9.20718 9.14888 9.18248 9.01671 9.18485C8.88454 9.18722 8.75419 9.21661 8.63344 9.27126C8.51269 9.32592 8.40402 9.40472 8.3139 9.50297L6.38452 11.463L5.76765 10.8363C5.58104 10.6597 5.33423 10.5635 5.07921 10.5681C4.82419 10.5726 4.58087 10.6776 4.40052 10.8608C4.22016 11.044 4.11685 11.2912 4.11235 11.5503C4.10785 11.8093 4.20252 12.0601 4.3764 12.2496L5.6889 13.583C5.87347 13.7702 6.12366 13.8754 6.38452 13.8754C6.64538 13.8754 6.89558 13.7702 7.08015 13.583L9.70515 10.9163ZM9.70515 16.8363C9.88949 17.0238 9.99303 17.278 9.99303 17.543C9.99303 17.808 9.88949 18.0621 9.70515 18.2496L7.08015 20.9163C6.89558 21.1036 6.64538 21.2088 6.38452 21.2088C6.12366 21.2088 5.87347 21.1036 5.6889 20.9163L4.3764 19.583C4.27968 19.4914 4.20211 19.381 4.14831 19.2584C4.09451 19.1357 4.06558 19.0033 4.06325 18.869C4.06091 18.7347 4.08523 18.6014 4.13474 18.4768C4.18424 18.3523 4.25793 18.2392 4.35141 18.1443C4.44488 18.0493 4.55623 17.9744 4.6788 17.9241C4.80137 17.8738 4.93266 17.8491 5.06483 17.8515C5.197 17.8539 5.32735 17.8833 5.4481 17.9379C5.56885 17.9926 5.67753 18.0714 5.76765 18.1696L6.38452 18.7963L8.3139 16.8363C8.49847 16.649 8.74866 16.5438 9.00952 16.5438C9.27038 16.5438 9.52058 16.649 9.70515 16.8363ZM16.5485 3.32164C16.4935 2.56633 16.1593 1.86012 15.613 1.34473C15.0668 0.82934 14.3488 0.542924 13.6033 0.542969H9.00952C8.28313 0.542991 7.58224 0.814978 7.04083 1.30693C6.49942 1.79888 6.15548 2.47629 6.07477 3.20964H3.75952C2.9763 3.20964 2.22517 3.52571 1.67135 4.08832C1.11753 4.65092 0.806396 5.41399 0.806396 6.20964V24.2096C0.806396 25.0053 1.11753 25.7683 1.67135 26.331C2.22517 26.8936 2.9763 27.2096 3.75952 27.2096H18.8533C19.2411 27.2096 19.6251 27.132 19.9834 26.9813C20.3417 26.8305 20.6672 26.6095 20.9414 26.331C21.2157 26.0524 21.4332 25.7217 21.5816 25.3577C21.73 24.9937 21.8064 24.6036 21.8064 24.2096V6.20964C21.8064 5.81567 21.73 5.42556 21.5816 5.06159C21.4332 4.69761 21.2157 4.36689 20.9414 4.08832C20.6672 3.80974 20.3417 3.58876 19.9834 3.438C19.6251 3.28723 19.2411 3.20964 18.8533 3.20964H16.538L16.5485 3.32164ZM16.5485 3.33764L16.5564 3.54297C16.5564 3.47364 16.5538 3.40564 16.5498 3.33764H16.5485ZM9.00952 6.54297H13.6033C14.627 6.54297 15.5287 6.01364 16.059 5.20964H18.8533C19.1143 5.20964 19.3647 5.31499 19.5493 5.50253C19.7339 5.69006 19.8376 5.94442 19.8376 6.20964V24.2096C19.8376 24.4749 19.7339 24.7292 19.5493 24.9167C19.3647 25.1043 19.1143 25.2096 18.8533 25.2096H3.75952C3.49845 25.2096 3.24807 25.1043 3.06346 24.9167C2.87886 24.7292 2.77515 24.4749 2.77515 24.2096V6.20964C2.77515 5.94442 2.87886 5.69006 3.06346 5.50253C3.24807 5.31499 3.49845 5.20964 3.75952 5.20964H6.55383C7.08408 6.01364 7.98577 6.54297 9.00952 6.54297ZM9.00952 2.54297H13.6033C13.8643 2.54297 14.1147 2.64833 14.2993 2.83586C14.4839 3.0234 14.5876 3.27775 14.5876 3.54297C14.5876 3.80819 14.4839 4.06254 14.2993 4.25008C14.1147 4.43761 13.8643 4.54297 13.6033 4.54297H9.00952C8.74845 4.54297 8.49807 4.43761 8.31346 4.25008C8.12886 4.06254 8.02515 3.80819 8.02515 3.54297C8.02515 3.27775 8.12886 3.0234 8.31346 2.83586C8.49807 2.64833 8.74845 2.54297 9.00952 2.54297Z"
+                                                fill="#E0E0E0" />
+                                        </svg>
+                                        <p>Тех.задание</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-phone _burger-header-phone">
+                                <a href="#">
+                                    <div class="header-phone__wrapper">
+                                        <div class="header-phone__text">
+                                            <p><span class="header-phone__text1">Маркетолог сейчас Online</span>
+                                                <br>
+                                                <span class="header-phone__text2">+375 44 711 24 64</span>
+                                            </p>
+                                        </div>
+                                        <div class="header-phone__img">
+                                            <img src="img\tg.png" alt="img">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="top__content">
+                            <div class="top__title">
+                                <h1><span class="top-title__span">5 рабочих</span> маркетинговых стратегий для генерации
+                                    прибыли <span class="top-title__span">вашей</span> компании!</h1>
+                            </div>
+                            <div class="top-form__wrapper">
+                                <div class="top-form__title">
+                                    <p class="top-form-title__text">Хотите, чтобы мы внедрили и разработали стратегию
+                                        под ваш бизнес?</p>
+                                </div>
+                                <form class="top__form" method="POST" enctype="multipart/form-data">
+                                    <input required name="name" type="text" class="top-form__input"
+                                        placeholder="Ваше имя">
+                                    <input required name="phone" type="number" class="top-form__input"
+                                        placeholder="Номер телефона">
+
+                                    <button class="top-form__btn" type="submit">Жду звонка</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="square-1"></div>
+                <div class="square-2">
+                    <span></span>
+                </div>
+                <div class="square-3"></div>
+                <div class="container">
+                    <div class="section__wrapper">
+                        <div class="trafic">
+                            <div class="trafic__left">
+                                <div class="trfic-left__title">
+                                    <h2>Квиз <span class="trafic-left__span">+</span> Трафик</h2>
+
+                                </div>
+                                <div class="trafic-left__text">
+                                    <p>Пользователь переходит по рекламе, например, контекстной, таргетированной или
+                                        баннерной и
+                                        попадает на квиз. Здесь ему предлагают ответить на несколько вопросов и по
+                                        окончании
+                                        получить подарок</p>
+                                    <img class="trafic-left__img-line-1" src="img\line_1.png" alt="img">
+                                    <img class="trafic-left__img-line-2" src="img\line_2.png" alt="img">
+                                </div>
+
+                            </div>
+                            <div class="trafic__right">
+                                <img src="img\img_quiz.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="trafic-2">
+                            <div class="trafic-2__left">
+                                <img src="img\amico.png" alt="img">
+                            </div>
+                            <div class="trafic-2__right">
+                                <p class="trafic-2-right__text">
+                                    После прохождения теста появляется форма, где пользователя просят оставить почту,
+                                    чтобы бесплатно получить полезный файл, например, чек-лист
+                                </p>
+                                <img class="trafic-2-right__img-line" src="img\line_3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="trafic-item__wrapper">
+                            <div class="trafic-item__title">
+                                <h3>Преимущества данной <span class="trafic-item__title-span">стратегии</span> </h3>
+                            </div>
+                            <ul class="trafic-item__container">
+                                <li class="trafic-container__item">
+                                    <div class="trafic-container__img"><img src="img\dollar.png" alt="img"></div>
+                                    <div class="trafic-container__text">
+                                        <p>Затраты на внедрения в несколько раз ниже.</p>
+                                    </div>
+
+                                </li>
+                                <li class="trafic-container__item">
+                                    <div class="trafic-container__img"><img src="img\akar-icons_schedule.png" alt="img">
+                                    </div>
+                                    <div class="trafic-container__text">
+                                        <p>На реализацию требуется 2-3 дня.</p>
+                                    </div>
+                                </li>
+                                <li class="trafic-container__item">
+                                    <div class="trafic-container__img"><img src="img\bx_bx-line-chart-down.png"
+                                            alt="img"></div>
+                                    <div class="trafic-container__text">
+                                        <p>Стоимость заявок в 2-3 раза ниже, в зависимости от сферы деятельности и
+                                            региона
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="trafic-bottom__text">
+                                <p class="trafic-bottom-text__txt">Отличный инструмент для генерации заявок. Он доказал
+                                    свою эффективность уже во многих нишах и в разных регионах</p>
+                            </div>
+                        </div>
+                        <div class="section__btn">
+                            <a class="section-btn__link" href="#"> Смотреть пример реализации стратегии </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="square-4">
+                    <span></span>
+                </div>
+                <div class="square-5">
+
+                </div>
+                <div class="container">
+                    <div class="section__wrapper">
+                        <div class="section-card__title">
+                            <h2>Карточка товара <span class="section-card-title__span">+</span> трафик</h2>
+                        </div>
+                        <div class="section-card-list__wrapper">
+                            <ul class="section-card__list">
+                                <li class="section-card-list__item">Клиент видит фотографию понравившегося, например,
+                                    дома</li>
+                                <li class="section-card-list__item">Он кликает по ней и переходит в карточку самого
+                                    товара</li>
+                                <li class="section-card-list__item">Там он знакомится с ценами, сроками, отзывами, если
+                                    есть</li>
+                                <li class="section-card-list__item">Оставляет заявку, вы связываетесь
+                                    с ним и продаёте вашу услугу/товар</li>
+                            </ul>
+                        </div>
+                        <div class="section-card-img-list__wrapper">
+                            <ul class="section-card__img-list">
+                                <li class="section-carg-img-list__item">
+                                    <div class="img-list__img">
+                                        <img src="img\parson 1.png" alt="img">
+                                    </div>
+                                    <div class="img-list__text">
+                                        <h3>Товар</h3>
+                                        <p>100.000 USD </p>
+                                        <p class="img-list-text__gray">описание товара/услуги</p>
+                                    </div>
+                                </li>
+                                <li class="section-carg-img-list__item">
+                                    <div class="img-list__img">
+                                        <img src="img\parson 2.png" alt="img">
+                                    </div>
+                                    <div class="img-list__text">
+                                        <h3>Товар</h3>
+                                        <p>100.000 USD </p>
+                                        <p class="img-list-text__gray">описание товара/услуги</p>
+                                    </div>
+                                </li>
+                                <li class="section-carg-img-list__item">
+                                    <div class="img-list__img">
+                                        <img src="img\parson 3.png" alt="img">
+                                    </div>
+                                    <div class="img-list__text">
+                                        <h3>Товар</h3>
+                                        <p>100.000 USD </p>
+                                        <p class="img-list-text__gray">описание товара/услуги</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section-card__bottom">
+                            <div class="section-card-bottom__title">
+                                <h2><span class="section-card-bottom-title__span">Внимание!</span></h2>
+                            </div>
+                            <div class="section-card-bottom__text">
+                                <p><span class="section-card-bottom-text__span">Здесь заявка (обращение), в отличие от
+                                        предыдущей стратегии, может стоить в несколько
+                                        раз дороже, но сам клиент будет дешевле! Такая стратегия позволяет получать
+                                        максимально целевых, прогретых и готовых к покупке клиентов
+                                        https://pstroy.by/ep-2</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section__btn">
+                            <a class="section-btn__link" href="#"> Смотреть пример реализации стратегии </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section__wrapper">
+                        <div class="robot__wrapper">
+                            <div class="robot__left">
+                                <div class="robot-left__img">
+                                    <img src="img\robot.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="robot__right">
+                                <div class="robot-right__text">
+                                    <h2 class="robot-right-text__title">Чат-бот <span
+                                            class="robot-right-text__span">+</span> трафик</h2>
+                                    <p>Рекламируем чат-бот в социальных сетях и направляем трафик в любой мессенджер:
+                                        вайбер и т.д.</p> <br>
+                                    <p>Сразу после нажатия кнопки «Начать», бот активируется, начинается диалог и вы
+                                        получаете данные клиента</p>
+                                </div>
+                                <div class="robot-right__social">
+                                    <ul class="robot-social__list">
+                                        <li class="robot-social__item">
+                                            <img src="img\akar-icons_telegram-fill.png" alt="img">
+                                        </li>
+                                        <li class="robot-social__item">
+                                            <img src="img\logos_whatsapp.png" alt="img">
+                                        </li>
+                                        <li class="robot-social__item">
+                                            <img src="img\logo_viber.png" alt="img">
+                                        </li>
+                                        <li class="robot-social__item">
+                                            <img src="img\akar-icons_facebook-fill.png" alt="img">
+                                        </li>
+                                        <li class="robot-social__item">
+                                            <img src="img\ant-design_instagram-filled.png" alt="img">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section__btn">
+                                    <a class="section-btn__link _small-btn_link" href="#"> Смотреть пример реализации
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="square-6"></div>
+                <div class="container">
+                    <div class="section__wrapper">
+                        <div class="longrid__wrapper">
+                            <div class="longrid__left">
+                                <div class="longrid-left__text">
+                                    <h2>Лонгрид <span class="robot-right-text__span">+</span> трафик</h2><br>
+                                    <p>Составляется лонгрид — детально проработанный формат контента, который послужит
+                                        хорошим инструментом для продажи и продвижения бренда. Это долгосрочная
+                                        инвестиция в имидж вашей компании.</p><br>
+                                    <p>Подготовили продающий лонгрид и пускаем на него трафик. Аудитория должна
+                                        заинтересоваться и проникнуться статьёй, чтобы потом совершить нужное вам
+                                        целевое действие. </p>
+                                </div>
+                                <div class="longrid-left__video-wrapper">
+                                    <img src="img\Rectangle 382.png" alt="img">
+                                    <div id="popup_btn" class="pulse longrid-left-video__btn"> <a href="#"
+                                            class="pulse__btn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="longrid__right">
+                                <div class="longrid-right__img">
+                                    <img src="img\longrid__img.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__btn">
+                            <a class="section-btn__link" href="#"> Смотреть пример реализации стратегии </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="square-7"></div>
+                <div class="square-8"></div>
+                <div class="container">
+                    <div class="section__wrapper">
+                        <div class="brending__wrapper">
+                            <div class="brending__left">
+                                <div class="brending-left__img">
+                                    <img src="img\amico2.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="brending__right">
+                                <div class="brending-right__text">
+                                    <h2>Брендинг</h2><br>
+                                    <p>Для современного мира начало повседневной работы по формированию позиции
+                                        позволяет
+                                        выполнить важные задания по разработке новых принципов формирования
+                                        материально-технической и кадровой базы.</p>
+                                </div>
+                                <div class="brending-right__text-small">
+                                    <p><span class="brending-text-small">Через брендинг максимально прогреваем клиентов,
+                                            что
+                                            стимулирует рост продаж. </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brending-bottom__wrapper">
+                            <div class="brending-bottom__title">
+                                <h3>Собираем клиентов через брендинг:</h3>
+                            </div>
+                            <div class="brending-bottom-list__wrapper">
+                                <ul class="brending-bottom__list">
+                                    <li class="brending-bottom-list__item">
+                                        <div class="brending-item__wrapper _brendig-item-01">
+                                            <p class="brending-item__text">СЕО. Контент-маркетинг</p>
+                                            <svg class="brending-bottom-item__img" viewBox="0 0 83 84" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M74.4769 13.2831L70.5393 9.34546C70.0647 8.86511 69.4996 8.48373 68.8766 8.22343C68.2535 7.96314 67.585 7.8291 66.9098 7.8291C66.2346 7.8291 65.5661 7.96314 64.9431 8.22343C64.3201 8.48373 63.7549 8.86511 63.2804 9.34546L45.1742 27.4551V38.6482H56.3707L74.4769 20.542C74.9572 20.0675 75.3386 19.5023 75.5989 18.8793C75.8592 18.2562 75.9932 17.5877 75.9932 16.9125C75.9932 16.2373 75.8592 15.5688 75.5989 14.9458C75.3386 14.3228 74.9572 13.7576 74.4769 13.2831ZM54.0047 33.3409H50.478V29.8142L62.2943 18.0116L65.821 21.5384L54.0047 33.3409Z"
+                                                    fill="#708FFF" />
+                                                <path
+                                                    d="M65.7183 66.0408H17.7821V18.1046H38.3262V11.2566H17.7821C15.9676 11.262 14.2289 11.9852 12.9458 13.2683C11.6627 14.5514 10.9395 16.2901 10.9341 18.1046V66.0408C10.9395 67.8553 11.6627 69.594 12.9458 70.8771C14.2289 72.1602 15.9676 72.8834 17.7821 72.8888H65.7183C67.5328 72.8834 69.2715 72.1602 70.5546 70.8771C71.8376 69.594 72.5609 67.8553 72.5663 66.0408V45.4967H65.7183V66.0408Z"
+                                                    fill="#708FFF" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="brending-bottom-list__item">
+                                        <div class="brending-item__wrapper">
+
+                                            <svg class="brending-bottom-item__img" viewBox="0 0 95 67" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M47.5847 0.611328H48.1083C52.9445 0.628979 77.4493 0.805484 84.0564 2.5823C86.0538 3.12457 87.8739 4.18156 89.3349 5.64764C90.7958 7.11373 91.8463 8.93755 92.3816 10.9369C92.9758 13.1726 93.3935 16.132 93.6759 19.1855L93.7348 19.7974L93.8642 21.3271L93.9113 21.939C94.2937 27.3165 94.3408 32.3528 94.3466 33.453V33.8942C94.3408 35.0356 94.2878 40.4131 93.8642 46.0142L93.8171 46.632L93.7642 47.2439C93.47 50.6092 93.0346 53.9511 92.3816 56.4104C91.848 58.4105 90.798 60.2352 89.3368 61.7015C87.8756 63.1678 86.0546 64.2243 84.0564 64.7649C77.2316 66.6006 51.2913 66.73 47.6964 66.7359H46.861C45.043 66.7359 37.5239 66.7006 29.64 66.4299L28.6398 66.3946L28.128 66.3711L27.1219 66.3299L26.1158 66.2887C19.5851 66.0005 13.3663 65.5357 10.501 64.759C8.50351 64.2189 6.68301 63.1633 5.2219 61.6981C3.76079 60.2328 2.71037 58.4094 2.17588 56.4104C1.52281 53.9569 1.08743 50.6092 0.793257 47.2439L0.746189 46.6261L0.699121 46.0142C0.408757 42.0276 0.247857 38.0325 0.216675 34.0354L0.216675 33.3118C0.228442 32.0468 0.27551 27.6754 0.593218 22.8509L0.634403 22.2449L0.652053 21.939L0.699121 21.3271L0.828558 19.7974L0.887393 19.1855C1.1698 16.132 1.58753 13.1667 2.18176 10.9369C2.71536 8.93675 3.76537 7.11206 5.22654 5.64573C6.68772 4.17939 8.50869 3.12295 10.5069 2.5823C13.3722 1.81744 19.591 1.34676 26.1217 1.05259L27.1219 1.01141L28.1338 0.976105L28.6398 0.958455L29.6459 0.917271C35.2453 0.737086 40.8469 0.637056 46.4491 0.617212H47.5847V0.611328ZM37.871 19.4973V47.844L62.3287 33.6765L37.871 19.4973Z"
+                                                    fill="#708FFF" />
+                                            </svg>
+                                            <p class="brending-item__text">YouTube маркетинг</p>
+
+                                        </div>
+                                    </li>
+                                    <li class="brending-bottom-list__item">
+                                        <div class="brending-item__wrapper _brendig-item-03">
+                                            <p class="brending-item__text">Постинг в социальных сетях </p>
+                                            <div class="brending-img__wrapper">
+                                                <svg class="brending-img_small _img-small-01" viewBox="0 0 53 54"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.52" fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M0.242065 26.9821C0.242065 40.0729 9.64909 50.9584 21.9522 53.1658V34.1485H15.4392V26.8351H21.9522V20.9831C21.9522 14.4004 26.1488 10.7448 32.0844 10.7448C33.9645 10.7448 35.9922 11.0367 37.8723 11.3285V18.0582H34.5442C31.3593 18.0582 30.6363 19.6666 30.6363 21.716V26.8351H37.5836L36.4264 34.1485H30.6363V53.1658C42.9395 50.9584 52.3465 40.0751 52.3465 26.9821C52.3465 12.419 40.623 0.504395 26.2943 0.504395C11.9656 0.504395 0.242065 12.419 0.242065 26.9821Z"
+                                                        fill="#708FFF" />
+                                                </svg>
+                                                <svg class="brending-img_small _img-small-02" viewBox="0 0 50 50"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.52"
+                                                        d="M25.2716 17.0225C20.7785 17.0225 17.1117 20.7284 17.1117 25.2696C17.1117 29.8107 20.7785 33.5166 25.2716 33.5166C29.7648 33.5166 33.4316 29.8107 33.4316 25.2696C33.4316 20.7284 29.7648 17.0225 25.2716 17.0225ZM49.7455 25.2696C49.7455 21.8544 49.7761 18.4703 49.5863 15.0613C49.3966 11.1018 48.5028 7.58767 45.638 4.69225C42.767 1.79064 39.2961 0.89355 35.3783 0.70176C31.9992 0.509969 28.6507 0.540903 25.2778 0.540903C21.8987 0.540903 18.5502 0.509969 15.1773 0.70176C11.2595 0.89355 7.78246 1.79682 4.91759 4.69225C2.0466 7.59386 1.15898 11.1018 0.969208 15.0613C0.779441 18.4764 0.810048 21.8606 0.810048 25.2696C0.810048 28.6785 0.779441 32.0689 0.969208 35.4778C1.15898 39.4373 2.05272 42.9514 4.91759 45.8469C7.78858 48.7485 11.2595 49.6456 15.1773 49.8373C18.5563 50.0291 21.9048 49.9982 25.2778 49.9982C28.6568 49.9982 32.0053 50.0291 35.3783 49.8373C39.2961 49.6456 42.7731 48.7423 45.638 45.8469C48.5089 42.9453 49.3966 39.4373 49.5863 35.4778C49.7822 32.0689 49.7455 28.6847 49.7455 25.2696ZM25.2716 37.9587C18.3237 37.9587 12.7164 32.2916 12.7164 25.2696C12.7164 18.2475 18.3237 12.5804 25.2716 12.5804C32.2196 12.5804 37.8269 18.2475 37.8269 25.2696C37.8269 32.2916 32.2196 37.9587 25.2716 37.9587ZM38.3411 15.0242C36.7189 15.0242 35.4089 13.7002 35.4089 12.0607C35.4089 10.4212 36.7189 9.09725 38.3411 9.09725C39.9633 9.09725 41.2733 10.4212 41.2733 12.0607C41.2738 12.45 41.1983 12.8356 41.0511 13.1954C40.9039 13.5551 40.6879 13.882 40.4156 14.1573C40.1432 14.4326 39.8198 14.6509 39.4638 14.7996C39.1078 14.9484 38.7263 15.0247 38.3411 15.0242Z"
+                                                        fill="#708FFF" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="brending-bottom-list__item">
+                                        <div class="brending-item__wrapper">
+                                            <svg class="brending-bottom-item__img" viewBox="0 0 91 90" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M75.2167 15H15.2167C11.0917 15 7.75417 18.375 7.75417 22.5L7.71667 67.5C7.71667 71.625 11.0917 75 15.2167 75H75.2167C79.3417 75 82.7167 71.625 82.7167 67.5V22.5C82.7167 18.375 79.3417 15 75.2167 15ZM15.2167 33.75H54.5917V46.875H15.2167V33.75ZM15.2167 54.375H54.5917V67.5H18.9667C16.9042 67.5 15.2167 65.8125 15.2167 63.75V54.375ZM71.4667 67.5H62.0917V33.75H75.2167V63.75C75.2167 65.8125 73.5292 67.5 71.4667 67.5Z"
+                                                    fill="#708FFF" />
+                                            </svg>
+                                            <p class="brending-item__text">Кейсы</p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <img class="brending-bottom__elips" src="img\Ellipse 202.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="section__btn">
+                            <a class="section-btn__link" href="#"> Смотреть пример реализации стратегии </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="section">
+                <div class="square-9"></div>
+                <div class="square-10"></div>
+                <div class="container">
+                    <div class="section__wrapper">
+                        <div class="grat__wrapper">
+                            <div class="grat__title">
+                                <h2>Страница <span class="color-violet">Благодарности</span></h2><br>
+                                <p>Страница, которая усиливает конверсию. Чтобы упростить процесс продаж и повысить
+                                    лояльность клиента, используем лид-магнит, им может быть:</p>
+                            </div>
+                            <div class="grat-image__block">
+                                <div class="grat-image-block__wrapper">
+                                    <div class="grate-image-block__left">
+                                        <div class="grate-image-left__top">
+                                            <div class="grate-left-top__img">
+                                                <img src="img\Group 1358.png" alt="img">
+                                            </div>
+                                            <div class="grate-img-block__text">
+                                                <p class="grate-text__small">Чек-лист</p>
+                                            </div>
+                                        </div>
+                                        <div class="grate-image-left__bottom">
+                                            <div class="grate-left-bottom__img">
+                                                <img src="img\Group 1361.png" alt="img">
+                                            </div>
+                                            <div class="grate-img-block__text">
+                                                <p class="grate-text__small">Можно использовать экспертное видео или
+                                                    статью. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grate-image-block__right">
+                                        <div class="grate-image-right__wrapper">
+                                            <div class="grate-right__img">
+                                                <img src="img\Group 1359.png" alt="img">
+                                            </div>
+                                            <div class="grate-img-block__text">
+                                                <p class="grate-text__small">Лонгрид статья (описанная подробно по
+                                                    этапам ваша работа)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grate__botoom">
+                                <div class="garte-botom__left">
+                                    <div class="grate-botom-left__wrapper _list-marker">
+                                        <p>Также для усиления правильно оформляем страницу «Спасибо», к этому вопросу
+                                            вообще можно подойти креативно. Ваша аудитория проделала большой путь, чтобы
+                                            отправить свои контактные данные, её обязательно нужно поблагодарить за
+                                            уделённое вам время, но вместе с благодарностью:</p>
+                                        <br>
+                                        <ul>
+                                            <li>Пересылаем чек-лист;</li>
+                                            <li>Экспертную статью</li>
+                                            <li>Статью-кейс или пример работы</li>
+                                            <li>Чат-бота или Instagram</li>
+                                        </ul>
+                                    </div>
+                                    <div class="section__btn">
+                                        <a class="section-btn__link _small-btn_link" href="#"> Как работает страница?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="garte-botom__right">
+                                    <div class="grate-botom-right__img">
+                                        <img src="img\Group 1473.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section__wrapper">
+                        <div class="p-s__wrapper">
+                            <div class="p-s__title">
+                                <h2>P.S. <span class="color-violet">Помните</span>, что перед внедрением каждой из
+                                    стратегий <span class="color-violet">ВАЖНО:</span> </h2>
+                            </div>
+                            <div class="p-s-item__wrapper">
+                                <ul class="p-s__list">
+                                    <li class="p-s__item">
+                                        <div class="p-s-item__img"><img src="img\bi_people.png" alt="img"></div>
+                                        <div class="p-s-item__text">Проанализировать вашу целевую аудиторию
+                                        </div>
+                                    </li>
+                                    <li class="p-s__item">
+                                        <div class="p-s-item__img"><img src="img\ion_person-circle.png" alt="img"></div>
+                                        <div class="p-s-item__text">Составить аватар клиента
+                                        </div>
+                                    </li>
+                                    <li class="p-s__item">
+                                        <div class="p-s-item__img"><img
+                                                src="img\fluent_clipboard-task-list-ltr-24-regular.png" alt="img"></div>
+                                        <div class="p-s-item__text">Проработать ваше УТП, выявить реальные преимущества
+                                            вашей компании
+                                        </div>
+                                    </li>
+                                    <li class="p-s__item">
+                                        <div class="p-s-item__img"><img src="img\fluent_target-arrow-20-filled.png"
+                                                alt="img"></div>
+                                        <div class="p-s-item__text">Определиться с целью рекламы
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-s-bottom__title">
+                                <h3>и только после этого <span class="color-violet">берите и внедряйте!</span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="square-11"></div>
+                <div class="square-12"></div>
+                <div class="footer__wrapper container">
+                    <div class="footer__title">
+                        <h2>Хотите, чтобы мы <span class="color-violet">разработали</span> и внедрили стратегию под
+                            <span class="color-violet">ваш бизнес?</span>
+                        </h2>
+                        <br>
+                        <p><span class="color-gray">оставьте заявку в форме ниже или пишите на удобный для вас
+                                мессенжер</span> </p>
+                    </div>
+                    <div class="footer-form__wrapper">
+                        <div class="top-form__wrapper _footer-form__wrapper">
+                            <div class="top-form__title">
+                                <p class="top-form-title__text">Хотите, чтобы мы внедрили и разработали стратегию
+                                    под ваш бизнес?</p>
+                            </div>
+                            <form class="top__form" method="POST" enctype="multipart/form-data">
+                                <input required name="name" type="text" class="top-form__input" placeholder="Ваше имя">
+                                <input required name="phone" type="number" class="top-form__input"
+                                    placeholder="Номер телефона">
+
+                                <button class="top-form__btn" type="submit">Жду звонка</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-social__wrapper">
+                        <ul class="robot-social__list _footer-social__list">
+                            <li class="robot-social__item"><a href="#"> <img src="img\akar-icons_telegram-fill.png"
+                                        alt="img"></a>
+
+                            </li>
+                            <li class="robot-social__item"><a href="#"><img src="img\logos_whatsapp.png" alt="img"></a>
+
+                            </li>
+                            <li class="robot-social__item"><a href="#"><img src="img\logo_viber.png" alt="img"></a>
+
+                            </li>
+                            <li class="robot-social__item"><a href="#"> <img src="img\akar-icons_facebook-fill.png"
+                                        alt="img"></a>
+
+                            </li>
+                            <li class="robot-social__item"><a href="#"><img src="img\ant-design_instagram-filled.png"
+                                        alt="img"></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__botom">
+                    <div class="footer-bottom__wrapper container">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img\footer_logo.png" alt="img"></a>
+
+                        </div>
+                        <div class="footer__adress">
+                            <p class="color__white">г. Минск, ул. Широкая, д. 3, офис 148,
+                                Работаем каждый день с 9 до 22</p>
+                        </div>
+                        <div class="footer__phone">
+                            <a class="footer-phone__link" href="#">+375 44 711 24 64
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+    <div id="popup-1" class="popup-1">
+        <div class="popup__wrapper">
+            <div id="popup__body" class="popup__body ">
+
+                <video id="video" class="popup__video" controls="controls">
+                    <source src="video\From Paris To Berlin - Kill or Cure.mp4"
+                        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+                <div id="popup__close" class="popup__close"><img src="img\ic-cancel_97589.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script src="js\index.js"></script>
+</body>
+
+</html>
